@@ -1,0 +1,278 @@
+#photo{
+	width:100%;
+	height:100%;
+	z-index:-1;
+	position:fixed;
+}
+
+
+.navbar {
+	margin-bottom: 0px;
+}
+
+.row {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+#contenu > h4 {
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+
+#navbar1{
+	background-color: #857e77;
+	
+}
+
+#menu{
+	background-color: #ece8e3;
+	height:7%;
+	margin-top: 0%;
+	margin-bottom: 0%;
+	font-size: 0.83em;
+	word-wrap: normal;
+}
+
+#drop{
+	color:black;
+	margin-top: 20%;
+	margin-left: 25%;
+}
+
+
+#navbar2{
+	background-color: #857e77;
+	margin-right:0%;
+	margin-left: 0%;
+	
+
+}
+
+#logo{
+	width:50px;
+	height:50px;
+	margin-top: 5%;
+	margin-left: 5%;
+	margin-bottom: 5%;
+}
+
+#titre{
+	font-family: 'lane_-_poshregular';
+	margin-top: 10%;
+	margin-left: 0px;
+}
+
+
+
+@font-face {
+    font-family: 'lane_-_narrowregular';
+    src: url('polices/LANENAR_-webfont.eot');
+    src: url('polices/LANENAR_-webfont.eot?#iefix') format('embedded-opentype'),
+         url('polices/LANENAR_-webfont.woff') format('woff'),
+         url('polices/LANENAR_-webfont.ttf') format('truetype'),
+         url('polices/LANENAR_-webfont.svg#lane_-_narrowregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'lane_-_poshregular';
+    src: url('polices/LANEPOSH-webfont.eot');
+    src: url('polices/LANEPOSH-webfont.eot?#iefix') format('embedded-opentype'),
+         url('polices/LANEPOSH-webfont.woff') format('woff'),
+         url('polices/LANEPOSH-webfont.ttf') format('truetype'),
+         url('polices/LANEPOSH-webfont.svg#lane_-_poshregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'lane_-_upperregular';
+    src: url('polices/LANEUP__-webfont.eot');
+    src: url('polices/LANEUP__-webfont.eot?#iefix') format('embedded-opentype'),
+         url('polices/LANEUP__-webfont.woff') format('woff'),
+         url('polices/LANEUP__-webfont.ttf') format('truetype'),
+         url('polices/LANEUP__-webfont.svg#lane_-_upperregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+#popover{
+	
+
+}
+
+#popover-content{
+	background-color: rgba (216,211,204, 0.9);
+}
+
+#popover:hover{
+	cursor: pointer;
+	background-color: #c3beb8;
+	border:2px solid #1b1b1b;
+	border-radius: 3px;
+}
+
+#login{
+	background-image: url("http://dl.bienvu.net/ludod/VillageGreenWeb1/images/BoutonValider.png");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	width:30%;
+	height: 100%;
+	border-radius: 10px;
+	outline: none;
+	border: 0px;
+}
+
+
+#recherche{
+	background-color: #c3beb8;
+	border:2px solid #1b1b1b;
+	
+}
+
+#loupe{
+	background-image: url("http://dl.bienvu.net/ludod/VillageGreenWeb1/images/Loupe.png");
+	height: 50px;
+	width:50px;
+	border-radius: 30px;
+	outline: none;
+	border: 0px;
+	background-repeat: no-repeat;
+
+}
+
+#search{
+	margin-left: 10%;	
+	margin-top: 0%;
+
+
+}
+
+.fondcouleur1 {
+	background-color: rgba(216,211,204, 0.9);		
+	
+
+}
+
+
+#contenu{
+	/*background-color: rgba(216,211,204, 0.9);*/		
+	padding-bottom: 12%;
+	width:100%;
+	padding-left: 3%;
+	padding-right: 3%;	
+	min-height:100%;
+}
+
+#page{
+	
+	top:0;
+	bottom:0;
+	margin-left: 100px;
+	margin-right: 100px;
+	
+}
+
+.container{
+	height:100%;
+	width:100%;
+}
+
+
+img{
+	height:100%;
+	width:100%;
+}
+
+.item {
+	width: 100%; 
+	height: 100%;
+}
+
+#Paiements{
+	margin-top: 2%;
+	margin-bottom: 2%;
+}
+
+#Paiements:hover{
+	cursor: pointer;
+	
+}
+
+#cgv{
+	margin-top: 4%;
+	padding-left: 10%;
+	margin-left: 2%;
+}
+
+#contact{
+	margin-top:4%;
+	padding-left: 10%;
+	margin-left: 7%;
+}
+
+#adresse{
+	margin-top:3%;
+	padding-left: 18%;
+	
+}
+
+#ReseauxSociaux{
+	float:right;
+	margin-top: 3%;
+}
+
+#Twitter{
+	box-shadow: 0 2px 2px #999;
+	width:38px;
+	height:38px;	
+}
+
+#Twitter:hover{
+      color: #00ABE3;
+      background: #fff;
+      cursor: pointer;
+}
+
+#Twitter:before{
+      font-family: "FontAwesome";
+      content: "\f099"; /* add twitter icon */
+}
+
+
+
+#Facebook{
+	box-shadow: 0 2px 2px #999;
+	width:38px;
+	height:38px;	
+	margin-left: 10%;
+}
+
+#Facebook:hover{
+    color: #4060A5;
+    background: #fff;
+    cursor: pointer;
+}
+
+#Facebook:before{ /* use :before to add the relevant icons */
+    font-family: "FontAwesome";
+    content: "\f09a"; /* add facebook icon */
+}
+
+
+
+
+
+
+
+
+
+
+
+
