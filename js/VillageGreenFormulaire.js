@@ -6,16 +6,16 @@ var regexemail = new RegExp("^[a-z0-9._-]+@[a-z0-9.-]+\.[a-z]{2,4}$");
 var regexfacturation = new RegExp("^[0-9]{1,3}[A-Za-z0-9 -]+$");
 var regexlivraison = new RegExp("^[0-9]{1,3}[A-Za-z0-9 -]+$"); 
 
-var nom = $("#Nom");
-var prenom = $("#Prenom");
-var email = $("#Email");
-var facturation = $("#Facturation");
-var livraison =$("#Livraison");
+var nom = $("#Nom_Client");
+var prenom = $("#Prenom_Client");
+var email = $("#Authentif");
+var facturation = $("#Adr_Factur");
+var livraison =$("#Adr_Livr");
 
 
 nom.on("input", function()
 {
-    if($("#Nom").val() == ""){
+    if($("#Nom_Client").val() == ""){
       nom.css("backgroundColor", "white");
     }
 
@@ -36,7 +36,7 @@ nom.on("input", function()
 
 prenom.on("input", function()
 {
-  if($("#Prenom").val() == ""){
+  if($("#Prenom_Client").val() == ""){
       prenom.css("backgroundColor", "white");
     }
 
@@ -53,7 +53,7 @@ prenom.on("input", function()
 
 email.on("input", function()
 {
-  if($("#Email").val() == ""){
+  if($("#Authentif").val() == ""){
       email.css("backgroundColor", "white");
     }
 
@@ -71,7 +71,7 @@ email.on("input", function()
 
 facturation.on("input", function()
 {
-  if($("#Facturation").val() == ""){
+  if($("#Adr_Factur").val() == ""){
       facturation.css("backgroundColor", "white");
     }
   else{
@@ -88,7 +88,7 @@ facturation.on("input", function()
 
 livraison.on("input", function()
 {
-  if($("#Livraison").val() == ""){
+  if($("#Adr_Livr").val() == ""){
       livraison.css("backgroundColor", "white");
     }
 

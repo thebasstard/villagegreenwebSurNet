@@ -1,3 +1,8 @@
+html, body{
+	height: 100%;
+	min-height: 100%;
+}
+
 #photo{
 	width:100%;
 	height:100%;
@@ -20,33 +25,37 @@
 	margin-bottom: 5%;
 }
 
-#navbar1{
+#headerclass{
 	background-color: #857e77;
+	min-height: 100%;
+
+
 	
 }
 
 #menu{
 	background-color: #ece8e3;
-	height:7%;
-	margin-top: 0%;
-	margin-bottom: 0%;
+	
+	
 	font-size: 0.83em;
 	word-wrap: normal;
 }
 
 #drop{
 	color:black;
-	margin-top: 20%;
+	margin-top: 10%;
 	margin-left: 25%;
 }
 
+.container-fluid{
+	height: 120px;
 
-#navbar2{
+}
+
+#footerclass{
 	background-color: #857e77;
 	margin-right:0%;
 	margin-left: 0%;
-	
-
 }
 
 #logo{
@@ -60,9 +69,13 @@
 #titre{
 	font-family: 'lane_-_poshregular';
 	margin-top: 10%;
-	margin-left: 0px;
+	margin-left: 50%;
 }
 
+
+#deconnexion{
+	margin-left: 50%;
+}
 
 
 @font-face {
@@ -103,7 +116,8 @@
 
 
 #popover{
-	
+	margin-left: 60%;
+	margin-top: 0%;
 
 }
 
@@ -122,11 +136,13 @@
 	background-image: url("http://dl.bienvu.net/ludod/VillageGreenWeb1/images/BoutonValider.png");
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
-	width:30%;
+	
 	height: 100%;
 	border-radius: 10px;
 	outline: none;
 	border: 0px;
+	padding-left: 65px;
+	padding-top: 15px;
 }
 
 
@@ -144,13 +160,17 @@
 	outline: none;
 	border: 0px;
 	background-repeat: no-repeat;
+	margin-top: 2%;
 
 }
 
 #search{
 	margin-left: 10%;	
 	margin-top: 0%;
+}
 
+#deconnexion{
+	margin-left: 0px;
 
 }
 
@@ -163,7 +183,7 @@
 
 #contenu{
 	/*background-color: rgba(216,211,204, 0.9);*/		
-	padding-bottom: 12%;
+	padding-bottom: 5%;
 	width:100%;
 	padding-left: 3%;
 	padding-right: 3%;	
@@ -180,6 +200,7 @@
 }
 
 .container{
+	min-height: 100%;
 	height:100%;
 	width:100%;
 }
@@ -190,9 +211,20 @@ img{
 	width:100%;
 }
 
+
+
 .item {
 	width: 100%; 
 	height: 100%;
+}
+
+#commercial{
+	margin-top: 8%;
+	color:red;
+}
+
+#passwordlabel{
+	color:red;
 }
 
 #Paiements{

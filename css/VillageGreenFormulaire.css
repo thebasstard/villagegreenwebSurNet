@@ -1,8 +1,6 @@
-
-#fond {	
-	width:100%;
+.container{
 	height:100%;
-	
+	width:100%;
 }
 
 #photo{
@@ -26,7 +24,7 @@ h4 {
 	margin-bottom: 5%;
 }
 
-#navbar1{
+#header{
 	background-color: #857e77;
 	
 }
@@ -34,35 +32,35 @@ h4 {
 
 #menu{
 	background-color: #ece8e3;
-	height:7%;
-	margin-top: 0%;
-	margin-bottom: 0%;
+	
 	font-size: 0.83em;
 	word-wrap: normal;
 }
 
 #drop{
 	color:black;
-	margin-top: 20%;
+	margin-top: 10%;
 	margin-left: 25%;
 }
 
 #logo{
 	width:50px;
 	height:50px;
-	margin-top: 10px;
+	margin-top: 5%;
+	margin-left: 5%;
+	margin-bottom: 5%;
 }
+
 
 #titre{
 	font-family: 'lane_-_poshregular';
-	margin-top: 30px;
-	margin-left: 150px;
+	margin-top: 10%;
+	margin-left: 50%;
 }
 
-#recherche{
-	background-color: #c3beb8;
-	border:2px solid #1b1b1b;
-	
+
+#deconnexion{
+	margin-left: 50%;
 }
 
 @font-face {
@@ -104,7 +102,9 @@ h4 {
 
 
 #popover{
-	margin-left: 175px;	
+	margin-left: 60%;
+	margin-top: 0%;
+
 }
 
 #popover-content{
@@ -116,6 +116,45 @@ h4 {
 	background-color: #c3beb8;
 	border:2px solid #1b1b1b;
 	border-radius: 3px;
+}
+
+#login{
+	background-image: url("http://dl.bienvu.net/ludod/VillageGreenWeb1/images/BoutonValider.png");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	
+	height: 100%;
+	border-radius: 10px;
+	outline: none;
+	border: 0px;
+	padding-left: 65px;
+	padding-top: 15px;
+}
+
+/*#recherche{
+	background-color: #c3beb8;
+	border:2px solid #1b1b1b;
+	
+}
+
+#loupe{
+	background-image: url("http://dl.bienvu.net/ludod/VillageGreenWeb1/images/Loupe.png");
+	height: 50px;
+	width:50px;
+	border-radius: 30px;
+	outline: none;
+	border: 0px;
+	background-repeat: no-repeat;
+
+}
+
+#search{
+	margin-left: 10%;	
+	margin-top: 0%;
+}*/
+
+#deconnexion{
+	margin-left: 0px;
 }
 
 #email{
@@ -131,22 +170,7 @@ h4 {
 }
 
 
-#search{
-	margin-left: 40%;
-	margin-top: 0px;
 
-
-}
-
-#loupe{
-	background-image: url("http://dl.bienvu.net/ludod/VillageGreenWeb1/images/Loupe.png");
-	height: 50px;
-	width:50px;
-	border-radius: 30px;
-	outline: none;
-	border: 0px;
-	background-repeat: no-repeat;
-}
 
 .fondcouleur1 {
 	background-color: rgba(216,211,204, 0.9);		

@@ -5,39 +5,47 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<!-- <link href="http://127.0.0.1/VillageGreenWeb/bootstrap/css/bootstrap.css" rel="stylesheet">
 		<link href="http://127.0.0.1/VillageGreenWeb/villagegreen.css" rel="stylesheet"> -->
-		<link href="bootstrap/css/bootstrap.css" rel="stylesheet">
-		<link href="css/villagegreen.css" rel="stylesheet">
+		<link href="<?=base_url("bootstrap/css/bootstrap.css")?>" rel="stylesheet">
+		<link href="<?=base_url("css/villagegreen.css")?>" rel="stylesheet">
 		<title>Village Green magasin de musique en ligne</title>
 	</head>
 	<body>
-
-	<img src="http://dl.bienvu.net/ludod/VillageGreenWeb1/images/Fond.png" id="photo"/>
-
+		
+	<img src="<?=base_url("images/Fond.png")?>" id="photo"/>
+	
 	<div class="container">
 		
 		<div id="page">
 
-			<div class="row">
-				<div class="navbar navbar-default" id="navbar1">
+			
+				<header class="container" id="headerclass">
 					
-						<div class="row">
+						<div class="container-fluid">
 						    
-							    <div class="col-xs-4 col-md-4">
-							      	<img src="http://dl.bienvu.net/ludod/VillageGreenWeb1/images/Logo.png" id="logo"/>
+							    <div class="col-xs-2 col-md-2">
+							      	<img src="<?=base_url("images/Logo.png")?>" id="logo"/>
 							    </div>
-							    <div class="col-xs-4 col-md-4">
+							    <div class="col-xs-5 col-md-5">
 									<h1 class="panel-title" align="center" id="titre"><strong>VILLAGE GREEN</strong></h1>										
 								</div>				
 								
-								<form class="col-xs-4 col-md-4 navbar-form navbar-left" role="search" id="search">
+								<form class="col-xs-5 col-md-5 navbar-form navbar-left" role="search" id="search">
 									<div class="form-group">
-										<input type="text" class="form-control" name="recherche" placeholer="Recherche" id="recherche"/>						
+										<input type="text" class="form-control" name="recherche" id="recherche"/>						
 									</div>
 										<button type="submit" id="loupe" class="btn btn-default"></button>								
-								</form>
-									<div>
-										<!-- <p id="EspaceClient" data-trigger="hover" data-container="body" data-toggle="popover" data-placement="bottom"  data-original-title="" title=""><strong>Espace client</strong></p> -->
-										<label for="espaceclient" id="popover" data-placement="bottom">Espace client</a>
+								</form>								
+        				
+									<div class="row col-xs-12 col-md-12">	
+										<div>
+											<form class="col-xs-2 col-md-2 navbar-form navbar-left">
+												<p class="navbar-btn" id="deconnexion">
+				                    				<a href="<?=site_url("vgclient/vglogout")?>" class="btn btn-default">Déconnexion</a>
+				                    				<span class="glyphicon glyphicon-lock"></span>
+				                				</p>
+			                				</form>
+	                					</div>									
+										<label for="espaceclient" class="col-xs-2 col-md-2" id="popover" data-placement="bottom">Espace client</label>
 										
 										<div id="popover-content" class="hide">
 										  <form method="post" class="vertical">
@@ -61,16 +69,13 @@
             								</div>
             								<div align="center">
             									<button type="submit" id="login" class="btn btn-default"></button>
-            								</div>
+            								</div>           								
 										  </form>
 										</div>
 									</div>
-									
-																																
-						</div>
-					
-				</div>
-			</div>
+						</div>						
+				</header>
+			
 
 			<div id="menu" class="navbar navbar-static">
 			  <div class="navbar-inner">
@@ -108,15 +113,10 @@
 			      </li>	
 			      <li class="dropdown col-xs-1 col-md-1"> <a href="#" id="drop" role="button" class="dropdown-toggle" data-toggle="dropdown"><strong>Claviers</strong><b class="caret"></b></a>
 			        <ul class="dropdown-menu" role="menu" aria-labelledby="drop">
-			          <li><a tabindex="-1" href="#"></a>
+			          <li><a tabindex="-1" href="#">Synthétiseurs</a>
 			          </li>
-			          <li><a tabindex="-1" href="#"></a>
-			          </li>
-			          <li><a tabindex="-1" href="#"></a>
-			          </li>
-			          <li class="divider"></li>
-			          <li><a tabindex="-1" href="#"></a>
-			          </li>
+			          <li><a tabindex="-1" href="#">Claviers MIDI</a>
+			          </li>			          
 			        </ul>
 			      </li>		      
 			      <li class="dropdown col-xs-1 col-md-1"> <a href="#" id="drop" role="button" class="dropdown-toggle" data-toggle="dropdown"><strong>Studio</strong><b class="caret"></b></a>
@@ -132,79 +132,74 @@
 			      <li class="dropdown col-xs-1 col-md-1"> <a href="#" id="drop" role="button" class="dropdown-toggle" data-toggle="dropdown"><strong>Sono</strong><b class="caret"></b></a>
 			        <ul class="dropdown-menu" role="menu" aria-labelledby="drop">
 			          <li>
-			          	<a tabindex="-1" href="#"></a>
+			          	<a tabindex="-1" href="#">Enceintes</a>
 			          </li>
 			          <li>
-			          	<a tabindex="-1" href="#"></a>
+			          	<a tabindex="-1" href="#">Amplificateurs de puissance</a>
 			          </li>
 			        </ul>
 			      </li>
 			      <li class="dropdown col-xs-1 col-md-1"> <a href="#" id="drop" role="button" class="dropdown-toggle" data-toggle="dropdown"><strong>Dj</strong><b class="caret"></b></a>
 			        <ul class="dropdown-menu" role="menu" aria-labelledby="drop">
-			          <li><a tabindex="-1" href="#"></a>
+			          <li><a tabindex="-1" href="#">Tables de mixage</a>
 			          </li>
-			          <li><a tabindex="-1" href="#"></a>
-			          </li>
-			          <li><a tabindex="-1" href="#"></a>
-			          </li>
-			          <li class="divider"></li>
-			          <li><a tabindex="-1" href="#"></a>
+			          <li><a tabindex="-1" href="#">Platines</a>
 			          </li>
 			        </ul>
 			      </li>
 			      <li class="dropdown col-xs-1 col-md-1"> <a href="#" id="drop" role="button" class="dropdown-toggle" data-toggle="dropdown"><strong>Micros</strong><b class="caret"></b></a>
 			        <ul class="dropdown-menu" role="menu" aria-labelledby="drop">
 			          <li>
-			          	<a tabindex="-1" href="#"></a>
+			          	<a tabindex="-1" href="#">Microphones de chant</a>
 			          </li>
 			          <li>
-			          	<a tabindex="-1" href="#"></a>
+			          	<a tabindex="-1" href="#">Microphones pour instruments</a>
 			          </li>
 			        </ul>
 			      </li>
 			      <li class="dropdown col-xs-1 col-md-1"> <a href="#" id="drop" role="button" class="dropdown-toggle" data-toggle="dropdown"><strong>Effets</strong><b class="caret"></b></a>
 			        <ul class="dropdown-menu" role="menu" aria-labelledby="drop">
-			          <li><a tabindex="-1" href="#"></a>
+			          <li><a tabindex="-1" href="#">Limiteurs</a>
 			          </li>
-			          <li><a tabindex="-1" href="#"></a>
+			          <li><a tabindex="-1" href="#">Compresseurs</a>
 			          </li>
-			          <li><a tabindex="-1" href="#"></a>
+			          <li><a tabindex="-1" href="#">Equalizers</a>
 			          </li>
 			          <li class="divider"></li>
-			          <li><a tabindex="-1" href="#"></a>
+			          <li><a tabindex="-1" href="#">Multi-effets</a>
 			          </li>
 			        </ul>
 			      </li>
 			      <li class="dropdown col-xs-1 col-md-1"> <a href="#" id="drop" role="button" class="dropdown-toggle" data-toggle="dropdown"><strong>Vents</strong><b class="caret"></b></a>
 			        <ul class="dropdown-menu" role="menu" aria-labelledby="drop">
 			          <li>
-			          	<a tabindex="-1" href="#"></a>
+			          	<a tabindex="-1" href="#">Flûtes</a>
 			          </li>
 			          <li>
-			          	<a tabindex="-1" href="#"></a>
+			          	<a tabindex="-1" href="#">Trompettes</a>
+			          </li>
+			          <li>
+			          	<a tabindex="-1" href="#">Saxophones</a>
 			          </li>
 			        </ul>
 			      </li>
 			      <li class="dropdown col-xs-1 col-md-1"> <a href="#" id="drop" role="button" class="dropdown-toggle" data-toggle="dropdown"><strong>Instr.Trad</strong><b class="caret"></b></a>
 			        <ul class="dropdown-menu" role="menu" aria-labelledby="drop">
-			          <li><a tabindex="-1" href="#"></a>
+			          <li><a tabindex="-1" href="#">Instruments à cordes</a>
 			          </li>
-			          <li><a tabindex="-1" href="#"></a>
+			          <li><a tabindex="-1" href="#">Instruments traditionnels et folkloriques</a>
 			          </li>
-			          <li><a tabindex="-1" href="#"></a>
-			          </li>
-			          <li class="divider"></li>
-			          <li><a tabindex="-1" href="#"></a>
+			          <li><a tabindex="-1" href="#">Accordéons</a>
 			          </li>
 			        </ul>
 			      </li>
 			      <li class="dropdown col-xs-1 col-md-1"> <a href="#" id="drop" role="button" class="dropdown-toggle" data-toggle="dropdown"><strong>Accessoires</strong><b class="caret"></b></a>
 			        <ul class="dropdown-menu" role="menu" aria-labelledby="drop">
 			          <li>
-			          	<a tabindex="-1" href="#"></a>
+			          	<a tabindex="-1" href="#">Pieds et supports</a>
 			          </li>
 			          <li>
-			          	<a tabindex="-1" href="#"></a>
+			          	<a tabindex="-1" href="#">Accordeurs</a>
 			          </li>
 			        </ul>
 			      </li>
@@ -228,19 +223,19 @@
 							  
 							  <div class="carousel-inner" role="listbox">
 							    <div class="item active">
-							      <img src="http://dl.bienvu.net/ludod/VillageGreenWeb1/images/SlideArrivages.png" alt="Slide 1">
+							      <img src="<?=base_url("images/SlideArrivages.png")?>" alt="Slide 1">
 							      <div class="carousel-caption">
 							        
 							      </div>
 							    </div>
 							    <div class="item">
-							      <img src="http://dl.bienvu.net/ludod/VillageGreenWeb1/images/SlideNew.png" alt="Slide 2">
+							      <img src="<?=base_url("images/SlideNew.png")?>" alt="Slide 2">
 							      <div class="carousel-caption">
 							        
 							      </div>
 							    </div>
 							    <div class="item">
-							      <img src="http://dl.bienvu.net/ludod/VillageGreenWeb1/images/SlidePromo.png" alt="Slide 3">
+							      <img src="<?=base_url("images/SlidePromo.png")?>" alt="Slide 3">
 							      <div class="carousel-caption">							        
 							      </div>
 							    </div>        
@@ -271,17 +266,17 @@
 				<div class="row">
 					  <div class="col-xs-4 col-md-4">
 					    <a href="#" class="thumbnail">
-					      <img src="http://dl.bienvu.net/ludod/VillageGreenWeb1/images/Top1.png" alt="photo1">
+					      <img src="<?=base_url("images/Top1.png")?>" alt="photo1">
 					    </a>
 					  </div>
 						<div class="col-xs-4 col-md-4">
 				    	<a href="#" class="thumbnail">
-				     	 <img src="http://dl.bienvu.net/ludod/VillageGreenWeb1/images/Top2.png" alt="photo2">
+				     	 <img src="<?=base_url("images/Top2.png")?>" alt="photo2">
 				   	 	</a>
 				  	</div>
 				  	<div class="col-xs-4 col-md-4">
 				    	<a href="#" class="thumbnail">
-				     	 <img src="http://dl.bienvu.net/ludod/VillageGreenWeb1/images/Top3.png" alt="photo3">
+				     	 <img src="<?=base_url("images/Top3.png")?>" alt="photo3">
 				   	 	</a>
 				  	</div>
 				</div>
@@ -290,24 +285,43 @@
 					<div class="col-xs-6 col-md-6">	
 						<h3 align="center"><strong>Partenaires</strong></h3>	
 						<br />							
-						<img src="http://dl.bienvu.net/ludod/VillageGreenWeb1/images/Partenaires.png"/>
+						<img src="<?=base_url("images/Partenaires.png")?>"/>
 					</div>
 					<div class="col-xs-6 col-md-6">
 						<h3 align="center"><strong>Info livraisons</strong></h3>
 						<br/>
-						<img src="http://dl.bienvu.net/ludod/VillageGreenWeb1/images/InfoLivraisons.png"/>
+						<img src="<?=base_url("images/InfoLivraisons.png")?>"/>
 					</div>
+					<form method="post" class"col-md-6">
+						<div align="center">
+							<label for="commercial" id="commercial"><h4><strong>Espace commercial</strong></h4></label>
+							<span class="glyphicon glyphicon-lock"></span>
+						</div>
+						<div align="center">
+							<input type="text" name="usercom" id="usercom">
+						</div>
+						<div align="center">
+							<label for="password" id="passwordlabel">Mot de passe</label>
+						</div align="center">
+						<div align="center">
+							<input type="password" name="passcom" id="passcom">
+						</div>												
+						<p class="navbar-btn" align="center">
+                    		<button type="submit" class="btn btn-default">Connexion</button>
+                		</p>           					
+					</form>
 				</div>
 
 			</div>
-		
-			<div class="row">
-				<div class="navbar navbar-default" id="navbar2">
+				
+			
+
+				<footer class="container" id="footerclass">
     				<div class="container-fluid">
-						<div class="navbar-footer">
+						
 							
 								<div class="col-xs-2 col-md-2" id="Paiements">
-									<img src="http://dl.bienvu.net/ludod/VillageGreenWeb1/images/Paiements.png"/>
+									<img src="<?=base_url("images/Paiements.png")?>"/>
 								</div>
 								<div class="col-xs-1 col-md-1" id="cgv">
 									<strong>C.G.V</strong>
@@ -319,21 +333,22 @@
 									<strong>5 BD du Soleil 80000 Amiens</strong>
 								</div>
 								<div class="col-xs-2 col-md-2" id="ReseauxSociaux">
-									<img src="http://dl.bienvu.net/ludod/VillageGreenWeb1/images/LogoTwitter.png" id="Twitter"/>																												
-									<img src="http://dl.bienvu.net/ludod/VillageGreenWeb1/images/LogoFb.png" id="Facebook"/>
+									<img src="<?=base_url("images/LogoTwitter.png")?>" id="Twitter"/>																												
+									<img src="<?=base_url("images/LogoFb.png")?>" id="Facebook"/>
 								</div>
 							
-						</div>	
+						
 					</div>
-				</div>
-			</div>	
+				</footer>
+			
 
 
 		</div>
 	</div>
+	
 	</body>
 </html>
 
-<script src="js/jquery.js"></script>
-<script src="bootstrap/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="js/pagedaccueil.js"></script>
+<script src="<?=base_url("js/jquery.js")?>"></script>
+<script src="<?=base_url("bootstrap/js/bootstrap.min.js")?>"></script>
+<script type="text/javascript" src="<?=base_url("js/pagedaccueil.js")?>"></script>s
